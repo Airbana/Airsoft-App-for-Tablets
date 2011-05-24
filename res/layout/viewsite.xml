@@ -1,0 +1,19 @@
+<RelativeLayout android:id="@+id/RelativeLayout01" 
+android:layout_width="fill_parent" 
+android:layout_height="fill_parent" 
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+<ImageView android:layout_width="wrap_content" 
+android:id="@+id/ImageView01" android:layout_height="wrap_content" android:src="@drawable/large_titleimage" android:layout_centerHorizontal="true"></ImageView>
+
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_below="@+id/ImageView01" android:id="@+id/viewsite_SiteName" android:layout_centerHorizontal="false" android:textStyle="bold" android:text="Loading......" android:textSize="20pt"></TextView>
+<TextView android:layout_height="wrap_content" android:layout_centerHorizontal="false" android:layout_width="wrap_content" android:layout_below="@+id/viewsite_SiteName" android:id="@+id/viewsite_Website" android:autoLink="web" android:textSize="12pt"></TextView>
+<TextView android:layout_height="wrap_content" android:layout_centerHorizontal="false" android:layout_width="wrap_content" android:layout_below="@+id/viewsite_Website" android:autoLink="phone" android:id="@+id/viewsite_ContactPhone" android:textSize="12pt"></TextView>
+<TextView android:layout_height="wrap_content" android:layout_centerHorizontal="false" android:layout_width="wrap_content" android:autoLink="email" android:id="@+id/viewsite_ContactEmail" android:layout_below="@+id/viewsite_ContactPhone" android:textSize="12pt"></TextView>
+<TextView android:layout_height="wrap_content" android:layout_centerHorizontal="false" android:layout_width="wrap_content" android:layout_below="@+id/viewsite_ContactEmail" android:paddingTop="10px" android:id="@+id/viewsite_Address1" android:textSize="12pt"></TextView>
+<TextView android:layout_height="wrap_content" android:layout_centerHorizontal="false" android:layout_width="wrap_content" android:layout_below="@+id/viewsite_Address1" android:id="@+id/viewsite_Address2" android:textSize="12pt"></TextView>
+<TextView android:layout_height="wrap_content" android:layout_centerHorizontal="false" android:layout_width="wrap_content" android:layout_below="@+id/viewsite_Address2" android:id="@+id/viewsite_PostCode" android:textSize="12pt"></TextView>
+<LinearLayout android:layout_below="@+id/viewsite_PostCode" android:id="@+id/SiteFeaturesLinear" android:paddingTop="20px" android:orientation="horizontal" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_width="wrap_content"></LinearLayout>
+<ImageView android:id="@+id/mapThumbnail" android:src="@drawable/mapcache_holder" android:layout_below="@+id/ImageView01" android:layout_alignParentRight="true" android:layout_marginRight="100px" android:layout_marginTop="80px" android:layout_width="300px" android:layout_height="225px"></ImageView>
+
+</RelativeLayout>

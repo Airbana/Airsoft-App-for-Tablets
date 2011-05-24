@@ -1,0 +1,17 @@
+<ScrollView android:id="@+id/scrollView1" xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="fill_parent" android:layout_width="fill_parent">
+	<RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/watermark" android:src="@drawable/airbana_logo_trans" android:layout_alignParentRight="true" android:layout_alignBottom="@+id/saveSettingsButton" android:layout_marginBottom="-25px"></ImageView>
+        <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/locationFilterRadioGroup" android:layout_centerHorizontal="true" android:text="Use my location to filter results" android:id="@+id/useGPSCheckBox"></CheckBox>
+        <TextView android:layout_below="@+id/useGPSCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/useGPSCheckBox" android:layout_alignRight="@+id/useGPSCheckBox" android:id="@+id/locationFilterDesc" android:text="This will filter the displayed results to within 100miles of your current GPS location" android:textSize="4pt"></TextView>
+        <Button android:text="Save Settings" android:id="@+id/saveSettingsButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_below="@+id/locationFilterDesc" android:layout_marginTop="100px"></Button>
+        
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TitleImage" android:src="@drawable/title_image" android:layout_centerHorizontal="true"></ImageView>
+        <RadioGroup android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/TitleImage" android:layout_centerHorizontal="true" android:id="@+id/locationFilterRadioGroup">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:id="@+id/regionAll" android:text="No Region Filter"></RadioButton>
+            <RadioButton android:layout_width="wrap_content" android:text="UK Locations &amp; Events" android:layout_height="wrap_content" android:id="@+id/regionUK"></RadioButton>
+            <RadioButton android:layout_width="wrap_content" android:text="US Locations &amp; Events" android:layout_height="wrap_content" android:id="@+id/regionUS"></RadioButton>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EU Locations &amp; Events" android:id="@+id/regionEU"></RadioButton>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Asia Locations &amp; Events" android:id="@+id/regionAsia"></RadioButton>
+        </RadioGroup>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,11 @@
+<LinearLayout android:id="@+id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+<com.google.android.maps.MapView
+android:id="@+id/AirbanaSiteMap"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:enabled="true"
+      android:clickable="true"
+      android:apiKey="0XtGNN3QfxStuoNVCqF5ZHsQOhrD6e9qRL0ituQ"
+    />
+    
+</LinearLayout>
